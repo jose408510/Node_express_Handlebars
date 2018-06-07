@@ -18,9 +18,9 @@ var Burgers = {
       cb(res);
     });
   },
-  delete: function(condition, chicken) {
+  delete: function(condition, cb) {
     orm.delete("burgers", condition, function(res) {
-      chicken(res);
+      cb(res);
     });
   }
 };
